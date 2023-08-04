@@ -1,0 +1,89 @@
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:0  30px;
+    height: 100vh;
+
+    &-left {
+        overflow: hidden;
+        .contact-hero-image {
+            width: 100%;
+            object-fit: cover;
+            max-height: 95vh;
+            object-position: top center;
+            opacity: 0.8;
+        }
+    }
+
+
+
+    &-right {
+        padding:30px;
+        position: relative;
+
+        .contact-name {
+            margin-left: -11em;
+        }
+        
+        h1 {
+            font-family: 'roboto';
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 10vw;
+            line-height: 0.9em;
+            letter-spacing: -0.08em;
+        }
+
+
+        .contact-paragraph {
+            margin-top: 15%;
+            font-family: 'roboto';
+            font-weight: 200;
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+
+
+        &-bottom {
+            position: absolute;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            bottom: 3em;
+            right: 0em;
+            align-items: end;
+            .expiriance-years {
+                font-family: 'roboto';
+                font-weight: 500;
+                font-size: 7vw;
+                line-height: 0;
+            }
+            .expiriance-text {
+                font-family: 'roboto';
+                font-weight: 300;
+                font-size: $heading-font;
+                text-transform: uppercase;
+            }
+            .expiriance-social {
+                text-align: right;
+
+                a {
+                    color: $primary-color;
+                }
+
+                span{
+                    font-family: 'roboto';
+                    font-weight: 300;
+                    font-size: $heading-font;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+
+
+}

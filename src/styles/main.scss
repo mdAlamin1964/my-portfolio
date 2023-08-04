@@ -1,0 +1,50 @@
+@import './config';
+@import './resets';
+@import './home';
+@import './about';
+
+// Openning splash page
+.splash{
+    background: $primary-color;
+    color: $secondary-color;
+    height: 100vh;
+    position: relative;
+    #{&}--name h1 {
+        font-family: 'roboto';
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 8em;
+        line-height: 0.9em;
+        letter-spacing: -0.04em;
+    }
+
+    #{&}--main{
+        position: absolute;
+        bottom: 1.5em;
+        right: 0px;
+        padding: 1.5em;
+    }
+    
+    #{&}--left {
+        position: absolute;
+        right: 8em;
+        bottom: 4em;
+    }
+    #{&}--bottom--text {
+        position: absolute;
+        right: 1.5em;
+        bottom: 1em;
+    }
+}
+
+
+.move {
+    height: 0;
+    padding: 0;
+    opacity: 0
+}
+
+
+
+
+@import './responsive';

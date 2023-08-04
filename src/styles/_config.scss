@@ -1,0 +1,21 @@
+
+$primary-color: #000000;
+$secondary-color: #fff;
+$background-color: rgb(175, 175, 175);
+$body-text-color: white;
+
+$heading-font: 1.3em;
+
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin media-tab {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
