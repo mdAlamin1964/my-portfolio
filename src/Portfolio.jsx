@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Portfolio({image, imageHight}) {
+export default function Portfolio({image, imageHight, url}) {
     const styles = {
         backgroundImage: `url("${image}")`,
         backgroundPosition: "top",
@@ -8,10 +8,10 @@ export default function Portfolio({image, imageHight}) {
         height: imageHight,
     }
     return (
-        <>
-            <div className="portfolio" style={styles}>
-                
-            </div>
+        <>  
+            <a href={url} target='_blank'>
+                <div className="portfolio" style={styles}> </div>
+            </a>
         
         </>
     )

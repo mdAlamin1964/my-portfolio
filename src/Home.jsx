@@ -1,26 +1,21 @@
 import React from 'react'
 
-export default function Home({portfolio,  skill1}) {
+export default function Home({portfolio, skills}) {
     return (
             <main className="home--main">
                 <div className="home--main--hero">
                     <div className="home--heading">
                         <div className="heading--name">
                             <h1 className="heading--name--first">
-                                Mohammad
+                                Md
                             </h1>
                             <h1 className="heading--name--last">
-                                AlAmin
+                                Al Amin
                             </h1>
                         </div>
                         <div className="heading--left">
                             <ul>
-                                <li className="heading--left--item">
-                                    {skill1[0]}
-                                </li>
-                                <li className="heading--left--item">
-                                    {skill1[1]}
-                                </li>
+                                {skills}
                             </ul>
                         </div>
                         <div className="heading--bottom--text">

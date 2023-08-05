@@ -9,6 +9,7 @@
     color: $secondary-color;
     height: 100vh;
     position: relative;
+    
     #{&}--name h1 {
         font-family: 'roboto';
         font-weight: 400;
@@ -23,12 +24,15 @@
         bottom: 1.5em;
         right: 0px;
         padding: 1.5em;
+        .splash--name {
+            margin-right:280px ;
+        }
     }
     
     #{&}--left {
         position: absolute;
-        right: 8em;
-        bottom: 4em;
+        right: 6em;
+        bottom: 3em;
     }
     #{&}--bottom--text {
         position: absolute;

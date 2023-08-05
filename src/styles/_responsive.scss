@@ -12,10 +12,24 @@
 
         }
     }
+    .splash--name {
+        margin-right:0px !important;
+    }
+
+
+    // portfolio
+    .portfolio {
+        height: 100px !important;
+    }
+
 }
 
 
 @include media-tab {
+    body {
+        overflow: visible;
+    }
+
     // Side bar 
     .home{ 
         &--nav{
@@ -33,8 +47,6 @@
             &--item {
                 transform: rotateZ(0deg);
                 font-family: 'roboto';
-                font-weight: 400;
-                font-size: 1.2em;
                 text-transform: capitalize;
                 overflow: hidden;
                 justify-self: center;
@@ -81,8 +93,9 @@
     
         .heading--left {
             position: absolute;
-            right: 0em;
-            bottom: 2em;
+            left: 0em;
+            bottom: -3em;
+            width: 100%;
         }
     
         .heading--bottom--text {
@@ -101,14 +114,12 @@
         display: block;
         padding: 30px;
         height: 100vh;
-        overflow: hidden;
-    
+        overflow: visible;
         &-left {
-            height: 50vh;
+            max-height: 500px;
             width: 100%;
             .contact-hero-image {
-                object-fit: cover;
-                max-height: 95vh;
+                max-height: 100%;
             }
         }
     
@@ -117,8 +128,8 @@
         &-right {
             display: block;
             width: 100%;
-            margin-top: 2em;
             padding: 0;
+            margin-bottom: 20px;
             .contact-name {
                 margin-left:0;
             }
@@ -170,12 +181,15 @@
                     text-align: left;
                     span{
                         font-family: 'roboto';
-                        font-weight: 300;
+                        font-weight: 500;
                         font-size: $heading-font;
                         text-transform: uppercase;
                         text-decoration: underline;
                         margin-right: 20px;
                         margin-left: 0;
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: rgb(121, 121, 121);
                     }
                 }
             }
@@ -186,4 +200,7 @@
     }
 
 
+
+
+  
 }

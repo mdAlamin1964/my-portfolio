@@ -9,7 +9,7 @@ export default function Sidebar({getMenuNamFunc}) {
                     </a>
                 </li>
                 <li className="home--nav--item">
-                    <a onClick={getMenuNamFunc}  href="_#" className="home--nav--link ">
+                    <a onClick={getMenuNamFunc}  href="_#" className="home--nav--link nav--active">
                         projects
                     </a>
                 </li>

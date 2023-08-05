@@ -1,5 +1,5 @@
 import React from "react";
-export default function Contact() {
+export default function Contact({skills}) {
     const styls = {
         width: "90vw",
         float: "right",
@@ -10,29 +10,29 @@ export default function Contact() {
         color: "black",
     }
 
+    const customStyle = {
+        right : "2em",
+        color: "#000"
+    }
+
     return (
         <div className="splash" style={styls}>
             <div className="splash--main" style={headColor} >
                 <div className="splash--name" >
                     <h1 className="splash--name--first">
-                        Mohammad
+                        Md
                     </h1>
                     <h1 className="splash--name--last">
                         AlAmin
                     </h1>
                 </div>
-                <div className="splash--left">
+                <div className="splash--left" style={customStyle} >
                     <ul>
-                        <li className="splash--left--item">
-                            Wordpress
-                        </li>
-                        <li className="splash--left--item">
-                            Dynamic website
+                        <li>
+                            <span>mdalaminhossain1964@gmail.com</span>
+                            <a href = "mailto: mdalaminhossain1964@gmail.com"><h2 style={customStyle}>Email me</h2></a>
                         </li>
                     </ul>
-                </div>
-                <div className="splash--bottom--text">
-                    Facebook
                 </div>
             </div>
         </div>

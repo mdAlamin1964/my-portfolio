@@ -30,10 +30,13 @@ body {
 .home--nav--item {
   transform: rotateZ(-90deg);
   font-family: "roboto";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2em;
   text-transform: capitalize;
   overflow: hidden;
+}
+.home--nav--item .nav--active {
+  color: #6a00ff;
 }
 .home--nav--link {
   color: #000000;
@@ -55,6 +58,17 @@ body {
 }
 .home--main--portfolio .portfolio {
   width: 100%;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.54);
+  outline: solid 5px rgb(255, 255, 255);
+  outline-offset: -5px;
+}
+.home--main--portfolio .portfolio:hover {
+  margin-top: -15px;
+  box-shadow: 0px 0px 144px 71px rgba(106, 0, 255, 0.43);
+  -webkit-box-shadow: 0px 0px 144px 71px rgba(106, 0, 255, 0.43);
+  -moz-box-shadow: 0px 0px 144px 71px rgba(106, 0, 255, 0.43);
 }
 .home--main--hero {
   padding: 0 30px !important;
@@ -65,7 +79,7 @@ body {
 }
 .home--heading .heading--name {
   position: absolute;
-  right: 0;
+  left: 0;
 }
 .home--heading .heading--name h1 {
   font-family: "roboto";
@@ -161,6 +175,9 @@ body {
   text-decoration: underline;
   margin-left: 20px;
 }
+.contact-right-bottom .expiriance-social span:hover {
+  color: rgb(214, 214, 214);
+}
 
 .splash {
   background: #000000;
@@ -182,10 +199,13 @@ body {
   right: 0px;
   padding: 1.5em;
 }
+.splash .splash--main .splash--name {
+  margin-right: 280px;
+}
 .splash .splash--left {
   position: absolute;
-  right: 8em;
-  bottom: 4em;
+  right: 6em;
+  bottom: 3em;
 }
 .splash .splash--bottom--text {
   position: absolute;
@@ -210,8 +230,17 @@ body {
   .splash .splash--main .splash--name h1 {
     font-size: 4em;
   }
+  .splash--name {
+    margin-right: 0px !important;
+  }
+  .portfolio {
+    height: 100px !important;
+  }
 }
 @media screen and (max-width: 950px) {
+  body {
+    overflow: visible;
+  }
   .home--nav {
     width: 100%;
     height: 70px;
@@ -227,8 +256,6 @@ body {
   .home--nav--item {
     transform: rotateZ(0deg);
     font-family: "roboto";
-    font-weight: 400;
-    font-size: 1.2em;
     text-transform: capitalize;
     overflow: hidden;
     justify-self: center;
@@ -267,8 +294,9 @@ body {
   }
   .home--heading .heading--left {
     position: absolute;
-    right: 0em;
-    bottom: 2em;
+    left: 0em;
+    bottom: -3em;
+    width: 100%;
   }
   .home--heading .heading--bottom--text {
     position: absolute;
@@ -279,22 +307,20 @@ body {
     display: block;
     padding: 30px;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
   }
   .contact-left {
-    height: 50vh;
+    max-height: 500px;
     width: 100%;
   }
   .contact-left .contact-hero-image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-height: 95vh;
+    max-height: 100%;
   }
   .contact-right {
     display: block;
     width: 100%;
-    margin-top: 2em;
     padding: 0;
+    margin-bottom: 20px;
   }
   .contact-right .contact-name {
     margin-left: 0;
@@ -342,11 +368,14 @@ body {
   }
   .contact-right-bottom .expiriance-social span {
     font-family: "roboto";
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: underline;
     margin-right: 20px;
     margin-left: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(121, 121, 121);
   }
 }/*# sourceMappingURL=main.css.map */
