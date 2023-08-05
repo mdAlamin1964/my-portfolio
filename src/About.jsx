@@ -28,7 +28,7 @@ export default function About({image}) {
 
                 <div className="contact-right-bottom">
                     <div className="expiriance">
-                        <span className="expiriance-years">5</span>
+                        <span className="expiriance-years">6</span>
                         <span className="expiriance-text">Years of Work</span>
                     </div>
                     <div className="expiriance-social">
