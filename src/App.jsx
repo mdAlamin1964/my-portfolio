@@ -81,7 +81,7 @@ export default function App() {
                     
                     { currentPage === "About" &&  
                         <About 
-                             image="./src/images/profile (1).jpeg"
+                             image="./src/images/profile (1).jpg"
                         />
                     }
 
