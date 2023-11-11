@@ -32,7 +32,7 @@ export default function App() {
         return (
             <Portfolio 
                 key={nanoid()}
-                image={`./src/images/${n.image}`}
+                image={`https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/${n.image}`}
                 url={n.url}
                 imageHight={imageHight}
                 name = {n.name}

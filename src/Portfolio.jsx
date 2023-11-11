@@ -1,7 +1,7 @@
 import React from 'react'
 export default function Portfolio({image, imageHight, url, name, lang}) {
     const styles = {
-        backgroundImage: `url("${image}")`,
+        backgroundImage: `url(${image})`,
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
         backgroundSize:"cover",
