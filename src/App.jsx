@@ -35,6 +35,8 @@ export default function App() {
                 image={`./src/images/${n.image}`}
                 url={n.url}
                 imageHight={imageHight}
+                name = {n.name}
+                lang = {n.lang}
             />
         )
     })

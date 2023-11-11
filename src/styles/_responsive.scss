@@ -18,8 +18,17 @@
 
 
     // portfolio
-    .portfolio {
-        height: 100px !important;
+    .home--main--portfolio {
+        grid-template-columns: auto !important;
+        
+        .portfolio {
+            width: 90% !important;
+            margin: auto;
+            margin-bottom: 20px;
+            &:hover {
+                margin-top: 0;
+            }
+        }
     }
 
 }
