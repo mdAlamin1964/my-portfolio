@@ -9,6 +9,7 @@
     color: $secondary-color;
     height: 100vh;
     position: relative;
+    animation: bounce 2s infinite;
     
     #{&}--name h1 {
         font-family: 'roboto';

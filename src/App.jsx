@@ -22,23 +22,39 @@ export default function App() {
             x.classList.remove('nav--active')
         }
         event.target.classList.add('nav--active')
-        console.log(y)
     }
 
+    // Next Prev button function
+    const [nextBtn, setNextBtn] = React.useState(0);
+    const dataCount = data.length - 4
+    function nextPortBtn() {
+        if (nextBtn < dataCount) {
+            setNextBtn(nextBtn + 1)
+        }
+    }
 
+    function PrevPortBtn() {
+        if (nextBtn > 0) {
+            setNextBtn(nextBtn - 1)
+        }
+    }
+
+    console.log(nextBtn)
     // portfolio items
     const portfolioItems = data.map((n, i)=> {
-        let imageHight = (i % 2) === 0? "300px" : "350px"
-        return (
-            <Portfolio 
-                key={nanoid()}
-                image={`https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/${n.image}`}
-                url={n.url}
-                imageHight={imageHight}
-                name = {n.name}
-                lang = {n.lang}
-            />
-        )
+        if (i >= (0+nextBtn) && i < (4+nextBtn)) {
+            let imageHight = (i % 2) === 0? "300px" : "350px"
+            return (
+                <Portfolio 
+                    key={nanoid()}
+                    image={`https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/${n.image}`}
+                    url={n.url}
+                    imageHight={imageHight}
+                    name = {n.name}
+                    lang = {n.lang}
+                />
+            )
+        }
     })
 
     
@@ -78,6 +94,8 @@ export default function App() {
                             portfolio={portfolioItems}
                             skill1={skills}
                             skills={skillsItems}
+                            portNextBtn = {() => nextPortBtn()}
+                            portPrevBtn = {() => PrevPortBtn()}
                         />
                     }
                     

@@ -3,13 +3,13 @@ export default [
         image: "youtube.jpg",
         url: "https://mdalamin1964.github.io/youtubeclone/",
         name: "YouTube Clone",
-        lang: "js, React, Sass",
+        lang: "js, React, Sass, CSS",
     },
     {
         image: "porsche.png",
         url: "https://mdalamin1964.github.io/porsche/",
         name: "PORSCHE WEB",
-        lang: "js, React, Sass",
+        lang: "js, React, Sass, CSS",
     },
     {
         image: "image-gallery.jpg",
@@ -25,16 +25,17 @@ export default [
 
     },
 
-    // {
-    //     image: "calculator-fun.jpg",
-    //     url: "https://mdalamin1964.github.io/calculator-fun/",
-    //     name: "YouTube Clone",
-    //     lang: "js, React, Html, css, Sass",
-    // },
-    // {
-    //     image: "frontside-todo.jpg",
-    //     url: "https://mdalamin1964.github.io/frontside-todo/",
-    //     name: "ToDo app",
-    //     lang: "js, React, Html, css, Sass",
-    // },
+    {
+        image: "calculator-fun.jpg",
+        url: "https://mdalamin1964.github.io/calculator-fun/",
+        name: "Calculator Fun",
+        lang: "js, React, Sass, CSS",
+    },
+    {
+        image: "frontside-todo.jpg",
+        url: "https://mdalamin1964.github.io/frontside-todo/",
+        name: "ToDo app",
+        lang: "js, Python, React, CSS, Sass",
+    },
+    
 ]

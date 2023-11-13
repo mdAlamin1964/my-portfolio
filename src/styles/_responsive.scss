@@ -1,4 +1,7 @@
 
+
+//max-width: 768px
+
 @include media-md {
     .splash{
         position: static;
@@ -31,9 +34,18 @@
         }
     }
 
+    .arrow {
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background: white;
+        padding: 5px 0;
+    }
+
 }
 
 
+// max-width: 950px
 @include media-tab {
     body {
         overflow: visible;
