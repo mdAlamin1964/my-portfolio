@@ -2,6 +2,11 @@
     background: white;
     color: $primary-color;
     height: 100vh;
+
+    .splash {
+        animation: none;
+    }
+
     &--nav{
         width: 70px;
         float: left;
