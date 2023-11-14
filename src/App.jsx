@@ -101,7 +101,7 @@ export default function App() {
                     
                     { currentPage === "About" &&  
                         <About 
-                             image="./src/images/profile (1).jpg"
+                             image="https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/profile (1).jpg"
                         />
                     }
 
