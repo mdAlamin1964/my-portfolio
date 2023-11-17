@@ -10,21 +10,24 @@
     height: 100vh;
     position: relative;
     animation: bounce 2s infinite;
-    
-    #{&}--name h1 {
-        font-family: 'roboto';
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 8em;
-        line-height: 0.9em;
-        letter-spacing: -0.04em;
+    #{&}--name {
+            h1 {
+            font-family: 'roboto';
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 20vw;
+            line-height: 0.73em;
+            letter-spacing: -0.04em;
+        }
     }
 
     #{&}--main{
         position: absolute;
         bottom: 1.5em;
-        right: 0px;
-        padding: 1.5em;
+        width: 100%;
+        padding: 1.5%;
+        left:0;
+        top:4%;
         .splash--name {
             margin-right:280px ;
         }
@@ -33,7 +36,7 @@
     #{&}--left {
         position: absolute;
         right: 6em;
-        bottom: 3em;
+        bottom: 0;
     }
     #{&}--bottom--text {
         position: absolute;
