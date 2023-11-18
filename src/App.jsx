@@ -75,7 +75,7 @@ export default function App() {
 
 
     return (
-        <div className="constainer"> 
+        <div className="container"> 
           <Splash 
                 onHandle={openingfuc}
                 getMoved={opening}

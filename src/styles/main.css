@@ -147,7 +147,7 @@ body {
   max-height: 95vh;
   -o-object-position: top center;
      object-position: top center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .contact-right {
   padding: 30px;
@@ -277,6 +277,11 @@ body {
   font-size: 14px;
 }
 
+.container {
+  background: rgb(143, 0, 255);
+  background: linear-gradient(90deg, rgb(143, 0, 255) 0%, rgb(197, 28, 132) 49%, rgb(255, 41, 41) 100%);
+}
+
 @media screen and (max-width: 768px) {
   .splash {
     position: static;
@@ -287,6 +292,9 @@ body {
   }
   .splash .splash--main .splash--name h1 {
     font-size: 23vw;
+  }
+  .splash .splash--left {
+    left: 1.5em;
   }
   .splash--name {
     margin-right: 0px !important;

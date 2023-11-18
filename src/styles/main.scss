@@ -84,4 +84,10 @@
 
 
 
+
+.container {
+    @include backgourdGradient;
+}
+
+
 @import './responsive';
