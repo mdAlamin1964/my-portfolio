@@ -39,7 +39,6 @@ export default function App() {
         }
     }
 
-    console.log(nextBtn)
     // portfolio items
     const portfolioItems = data.map((n, i)=> {
         if (i >= (0+nextBtn) && i < (4+nextBtn)) {
@@ -101,7 +100,7 @@ export default function App() {
                     
                     { currentPage === "About" &&  
                         <About 
-                             image="https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/profile (1).jpg"
+                             image="https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/profile (2).jpg"
                         />
                     }
 
