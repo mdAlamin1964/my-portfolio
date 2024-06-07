@@ -1,7 +1,4 @@
-
-
 //max-width: 768px
-
 @include media-md {
     .splash{
         position: static;
@@ -46,6 +43,26 @@
         padding: 5px 0;
     }
 
+    .home--heading {
+        height: 220px !important;
+        .heading--name h1 {
+            font-size: 70px !important;
+        }
+
+    }
+
+
+    .home--nav--link  {
+        font-size: 1em !important;
+    }
+
+    .main-me {
+        a {
+            font-size: 12px;
+        }
+    }
+
+
 }
 
 
@@ -84,13 +101,17 @@
         &--main {
             width: 100%;
             padding: 5% 0;
+            .arrow {
+                margin-top: 20px;
+                background: transparent;
+            }
         }
     
         &--main--portfolio {
             display: grid;
             grid-template-columns: auto auto auto auto;
             grid-gap: 5px;
-            margin-top: 100px; 
+            margin-top: 20px; 
             align-items: center;
             .portfolio {
                 width: 100%;

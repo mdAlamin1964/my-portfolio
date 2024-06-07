@@ -34,6 +34,8 @@ export default function Contact({skills}) {
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </div>
     )

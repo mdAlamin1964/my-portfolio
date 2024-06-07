@@ -42,7 +42,7 @@ export default function App() {
     // portfolio items
     const portfolioItems = data.map((n, i)=> {
         if (i >= (0+nextBtn) && i < (4+nextBtn)) {
-            let imageHight = (i % 2) === 0? "300px" : "350px"
+            let imageHight = (i % 2) === 0? "250px" : "300px"
             return (
                 <Portfolio 
                     key={nanoid()}
@@ -75,43 +75,49 @@ export default function App() {
 
 
     return (
-        <div className="container"> 
-          <Splash 
-                onHandle={openingfuc}
-                getMoved={opening}
-                skills={skillsItems}
-            />
+        <>
+            <div className="container"> 
+            <Splash 
+                    onHandle={openingfuc}
+                    getMoved={opening}
+                    skills={skillsItems}
+                />
 
-            {
-            opening && 
-                <div className="home">
-                    <Sidebar 
-                        getMenuNamFunc={getMenuNamFunc}
-                    />
-                    { currentPage === "Projects" &&  
-                        <Home 
-                            portfolio={portfolioItems}
-                            skill1={skills}
-                            skills={skillsItems}
-                            portNextBtn = {() => nextPortBtn()}
-                            portPrevBtn = {() => PrevPortBtn()}
+                {
+                opening && 
+                    <div className="home">
+                        <Sidebar 
+                            getMenuNamFunc={getMenuNamFunc}
                         />
-                    }
-                    
-                    { currentPage === "About" &&  
-                        <About 
-                             image="https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/profile (2).jpg"
-                        />
-                    }
+                        { currentPage === "Projects" &&  
+                            <Home 
+                                portfolio={portfolioItems}
+                                skill1={skills}
+                                skills={skillsItems}
+                                portNextBtn = {() => nextPortBtn()}
+                                portPrevBtn = {() => PrevPortBtn()}
+                            />
+                        }
+                        
+                        { currentPage === "About" &&  
+                            <About 
+                                image="https://raw.githubusercontent.com/mdAlamin1964/my-portfolio/main/src/images/profile (1).jpg"
+                            />
+                        }
 
-                    { currentPage === "Contact" &&  
-                        <Contact 
-                            skills={skillsItems}
-                        />
-                    }
+                        { currentPage === "Contact" &&  
+                            <Contact 
+                                skills={skillsItems}
+                            />
+                        }
 
-                </div>
-            }
-        </div>
+                    </div>
+                }
+            </div>
+
+            <div className="main-me">
+                <a href="https://www.fiverr.com/alamin1964/" target='_blank'>Concept & build by MD. Alamin</a>
+            </div>
+        </>
     )
 }

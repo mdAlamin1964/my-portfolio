@@ -24,14 +24,11 @@
             transform: rotateZ(-90deg);
             font-family: 'roboto';
             font-weight: 500;
-            font-size: 1.2em;
+            font-size: 1em;
             text-transform: capitalize;
             overflow: hidden;
             .nav--active {
                 color: #6a00ff;
-                // background: -webkit-linear-gradient(#d90429, #6a00ff);
-                // -webkit-background-clip: text;
-                // -webkit-text-fill-color: transparent;
             }
         }
 
@@ -120,7 +117,7 @@
 
     .heading--left {
         position: absolute;
-        right: 9em;
+        right: 0em;
         bottom: 3em;
     }
 

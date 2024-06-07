@@ -90,4 +90,21 @@
 }
 
 
+
+.main-me {
+    padding: 0 20px;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+    a {
+        color: black;
+        &:hover {
+            color: #1DBF73;
+        }
+    }
+}
+
+
 @import './responsive';

@@ -17,12 +17,9 @@ export default function About({image}) {
 
                 <div className="contact-paragraph">
                     <p>
-                    Hi, I'm Md. Al Amin, I am working as a web developer since 2019 in the 
-                    freelancing field. I have been working these years with many overseas 
-                    companies and individuals. I will love to work with your company. My Service 
-                    and experience will help your company to grow more. I love being a 
-                    Front-end developer, I am building websites for almost 6 years now, so I can 
-                    ensure you with my experience. 
+                    Hi!, I am certified frontend developer and designer. You can always expect professional service from me. I am highly experienced in frontend development and website builder like WordPress, Divi, Wix, Squarespace etc. I always focus on the quality of my work for my clients. Please check out the amazing feedback of my previous clients. 
+                        <br />
+                    Thank you, looking forward to working with you. Md. Al Amin
                      </p>
                 </div>
 

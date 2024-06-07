@@ -46,7 +46,7 @@ body {
   transform: rotateZ(-90deg);
   font-family: "roboto";
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: capitalize;
   overflow: hidden;
 }
@@ -122,7 +122,7 @@ body {
 }
 .home--heading .heading--left {
   position: absolute;
-  right: 9em;
+  right: 0em;
   bottom: 3em;
 }
 .home--heading .heading--bottom--text {
@@ -282,6 +282,21 @@ body {
   background: linear-gradient(90deg, rgb(143, 0, 255) 0%, rgb(197, 28, 132) 49%, rgb(255, 41, 41) 100%);
 }
 
+.main-me {
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  text-align: center;
+}
+.main-me a {
+  color: black;
+}
+.main-me a:hover {
+  color: #1DBF73;
+}
+
 @media screen and (max-width: 768px) {
   .splash {
     position: static;
@@ -317,6 +332,18 @@ body {
     background: white;
     padding: 5px 0;
   }
+  .home--heading {
+    height: 220px !important;
+  }
+  .home--heading .heading--name h1 {
+    font-size: 70px !important;
+  }
+  .home--nav--link {
+    font-size: 1em !important;
+  }
+  .main-me a {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 950px) {
   body {
@@ -347,11 +374,15 @@ body {
     width: 100%;
     padding: 5% 0;
   }
+  .home--main .arrow {
+    margin-top: 20px;
+    background: transparent;
+  }
   .home--main--portfolio {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 5px;
-    margin-top: 100px;
+    margin-top: 20px;
     align-items: center;
   }
   .home--main--portfolio .portfolio {
